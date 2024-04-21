@@ -1,5 +1,5 @@
 import "./ListContainer.css";
-import tatsumi from "../../../public/assets/imgs/tatsumi1-img1.jpg";
+import tatsumi from "../../assets/imgs/tatsumi1-img1.jpg";
 
 const linkToPA = "https://maps.app.goo.gl/caxDBY1KC52nDLj97";
 
