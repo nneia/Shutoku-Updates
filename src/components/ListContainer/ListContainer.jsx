@@ -1,5 +1,5 @@
 import "./ListContainer.css";
-import tatsumiImage from "./src/assets/imgs/tatsumi1-img1.jpg";
+import tatsumiImage from "../../assets/imgs/tatsumi1-img1.jpg";
 const linkToPA = "https://maps.app.goo.gl/caxDBY1KC52nDLj97";
 
 const ListContainer = ({ openItem, openModal }) => (
