@@ -1,16 +1,12 @@
 import "./ListContainer.css";
+import tatsumi from "../../../public/assets/imgs/tatsumi1-img1.jpg";
 
 const linkToPA = "https://maps.app.goo.gl/caxDBY1KC52nDLj97";
 
 const ListContainer = ({ openItem, openModal }) => (
   <div className="list-container">
     <div className="list-item">
-      <img
-        src="/assets/imgs/tatsumi1-img1.jpg"
-        alt=""
-        className="list-img"
-        onClick={openItem}
-      />
+      <img src={tatsumi} alt="" className="list-img" onClick={openItem} />
       <div className="list-info">
         <h2 className="list-title" onClick={openItem}>
           Tatsumi 1 PA (IN)
