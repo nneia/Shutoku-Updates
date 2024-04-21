@@ -36,7 +36,7 @@ const ListContainer = ({ openItem, openModal }) => (
     </div>
     <div className="list-item">
       <img
-        src={`${import.meta.env.BASE_URL}src/assets/imgs/tatsumi1-img1.jpg`}
+        src="src/assets/imgs/tatsumi1-img1.jpg"
         alt=""
         className="list-img"
       />
