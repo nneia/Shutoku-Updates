@@ -26,7 +26,7 @@ const UpdateStatusModal = ({ Open, Close }) => {
         <p className="update-btn">Confirm</p>
         <svg
           onClick={Close}
-          class="cancel"
+          className="cancel"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 128 128"
         >
