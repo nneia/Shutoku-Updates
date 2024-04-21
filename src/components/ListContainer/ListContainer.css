@@ -1,0 +1,91 @@
+.list-container {
+  width: 30%;
+  height: 750px;
+  font-family: "Ubuntu", sans-serif;
+  overflow-y: scroll;
+  box-sizing: border-box;
+  padding-bottom: 50px;
+  display: block;
+}
+
+.list-item {
+  width: 100%;
+  display: flex;
+  min-height: 125px;
+}
+.list-img {
+  width: 40%;
+  cursor: pointer;
+}
+
+.nav-icon {
+  height: 20px;
+}
+
+.list-info {
+  padding: 15px;
+  width: 60%;
+  position: relative;
+}
+.list-item:hover .list-info {
+  background-color: #f7f8fc;
+  cursor: pointer;
+}
+.list-title {
+  cursor: pointer;
+}
+.list-title:hover {
+  opacity: 0.6;
+}
+.list-status-box {
+  display: flex;
+  margin-top: 5px;
+}
+.list-status {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.list-status-icon {
+  height: 10px;
+  width: 10px;
+  border-radius: 100%;
+  margin-left: 5px;
+  margin-top: 2px;
+}
+
+.list-controls {
+  display: flex;
+  margin-top: 20px;
+  position: absolute;
+  bottom: 10px;
+}
+.list-update {
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 15px;
+  padding-bottom: 12px;
+  padding-top: 14px;
+  background-color: #d9d9d9;
+  font-weight: bold;
+  color: #312f2f;
+  cursor: pointer;
+  transition: 200ms;
+  border-radius: 4px;
+}
+.list-update:hover {
+  opacity: 0.7;
+}
+.list-nav {
+  padding-bottom: 8px;
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-top: 12px;
+  background-color: #d9d9d9;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: 200ms;
+  border-radius: 4px;
+}
+.list-nav:hover {
+  opacity: 0.7;
+}

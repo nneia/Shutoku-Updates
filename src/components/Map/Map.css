@@ -1,0 +1,43 @@
+.google-map {
+  width: 70%;
+  height: 100vh;
+  display: block;
+  position: relative;
+}
+.list-container {
+  width: 30%;
+  height: 750px;
+  font-family: "Ubuntu", sans-serif;
+  overflow-y: scroll;
+  box-sizing: border-box;
+  padding-bottom: 50px;
+  display: block;
+}
+
+.info-window {
+  background-color: #312f2f;
+  color: white;
+}
+.info-wrap {
+  display: flex;
+}
+.status {
+  display: block;
+  height: 8px;
+  width: 8px;
+  border-radius: 100%;
+  margin-left: 8px;
+  margin-top: 6px;
+}
+
+.gm-style .gm-style-iw-d::-webkit-scrollbar-track,
+.gm-style .gm-style-iw-d::-webkit-scrollbar-track-piece,
+.gm-style .gm-style-iw-c,
+.gm-style .gm-style-iw-t::after {
+  background: #312f2f !important;
+  padding-top: 5px !important;
+}
+.gm-style-iw-tc::after,
+.gm-ui-hover-effect {
+  display: none !important;
+}

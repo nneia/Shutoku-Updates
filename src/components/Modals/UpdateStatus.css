@@ -1,0 +1,110 @@
+.modal-upd {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -80%);
+  width: 25%;
+  height: 280px;
+  background-color: #f7f8fc;
+  border-radius: 6px;
+  z-index: 99;
+  box-sizing: border-box;
+  padding: 25px;
+  font-family: "Ubuntu", sans-serif;
+}
+.modal-shade {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 98;
+  opacity: 0.4;
+}
+.cancel {
+  height: 12px;
+  margin-right: 10px;
+  margin-top: 3px;
+  stroke: #b2b2b2;
+  position: absolute;
+  top: 25px;
+  right: 15px;
+  cursor: pointer;
+  transition: 350ms;
+  padding: 10px;
+  border-radius: 2px;
+}
+.cancel:hover {
+  background-color: #ddd;
+  stroke: #2e2e2e;
+}
+.upd-options {
+  display: flex;
+  width: 100%;
+  position: relative;
+  margin-bottom: 20px;
+}
+.option {
+  width: 25%;
+  justify-content: center;
+  border: 1px dashed #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  display: flex;
+  margin-right: 20px;
+  cursor: pointer;
+  background-color: white;
+  font-size: 14px;
+  color: #312f2f;
+}
+.option:hover {
+  opacity: 0.6;
+}
+.bg-green {
+  background-color: #d3ffd3;
+}
+.bg-red {
+  background-color: #ff7b7b;
+}
+.opt-status {
+  height: 8px;
+  width: 8px;
+  margin-top: 4px;
+  margin-right: 8px;
+  border-radius: 100%;
+}
+.update-input {
+  width: 100%;
+  height: 120px;
+  border: none;
+  background-color: white;
+  box-sizing: border-box;
+  padding: 15px;
+  resize: none;
+  overflow: auto;
+  outline: none;
+
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+.update-btn {
+  padding: 8px;
+  border: 1px solid #ddd;
+  padding-left: 15px;
+  padding-right: 15px;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 4px;
+  position: absolute;
+  left: 25px;
+  bottom: 25px;
+  color: #312f2f;
+}
+.update-btn:hover {
+  background-color: #ddd;
+  color: #2e2e2e;
+}
