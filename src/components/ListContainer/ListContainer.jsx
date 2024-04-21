@@ -6,7 +6,7 @@ const ListContainer = ({ openItem, openModal }) => (
   <div className="list-container">
     <div className="list-item">
       <img
-        src={`${import.meta.env.BASE_URL}assets/imgs/tatsumi1-img1.jpg`}
+        src="../public/assets/imgs/tatsumi1-img1.jpg"
         alt=""
         className="list-img"
         onClick={openItem}
