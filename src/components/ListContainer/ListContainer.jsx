@@ -35,7 +35,11 @@ const ListContainer = ({ openItem, openModal }) => (
       </div>
     </div>
     <div className="list-item">
-      <img src="src/assets/imgs/daikoku-img1.jpg" alt="" className="list-img" />
+      <img
+        src={`${import.meta.env.BASE_URL}src/assets/imgs/tatsumi1-img1.jpg`}
+        alt=""
+        className="list-img"
+      />
       <div className="list-info">
         <h2 className="list-title">Daikoku PA</h2>
         <div className="list-status-box">
