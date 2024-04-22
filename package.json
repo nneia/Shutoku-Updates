@@ -1,8 +1,8 @@
 {
-  "homepage": "https://nneia.github.io/",
-  "name": "Shutoku-Updates",
+  "homepage": "https://nneia.github.io/Shutoku-Updates/",
+  "name": "shutoku-vite",
   "private": true,
-  "version": "0.1.0",
+  "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
