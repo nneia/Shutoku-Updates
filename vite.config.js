@@ -5,9 +5,4 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
   plugins: [react()],
   base: "/Shutoku-Updates/",
-  build: {
-    rollupOptions: {
-      input: "src/main.jsx",
-    },
-  },
 });
