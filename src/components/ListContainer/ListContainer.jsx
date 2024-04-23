@@ -33,7 +33,7 @@ const ListContainer = ({ openItem, openModal }) => (
     </div>
     <div className="list-item">
       <img
-        src="src/assets/imgs/tatsumi1-img1.jpg"
+        src="../../assets/imgs/daikoku1-img1.jpg"
         alt=""
         className="list-img"
       />
