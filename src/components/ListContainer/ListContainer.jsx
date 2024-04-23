@@ -1,5 +1,10 @@
 import "./ListContainer.css";
 import tatsumi from "../../assets/imgs/tatsumi1-img1.jpg";
+import daikoku from "../../assets/imgs/daikoku1-img1.jpg";
+import heiwajima from "../../assets/imgs/heiwajima-img1.jpg";
+import shibaura from "../../assets/imgs/shibaura-img1.jpg";
+import hakozaki from "../../assets/imgs/hakozaki-img1.jpg";
+import umihotaru from "../../assets/imgs/umihotaru-img1.jpg";
 
 const linkToPA = "https://maps.app.goo.gl/caxDBY1KC52nDLj97";
 
@@ -32,11 +37,7 @@ const ListContainer = ({ openItem, openModal }) => (
       </div>
     </div>
     <div className="list-item">
-      <img
-        src="../../assets/imgs/daikoku1-img1.jpg"
-        alt=""
-        className="list-img"
-      />
+      <img src={daikoku} alt="" className="list-img" />
       <div className="list-info">
         <h2 className="list-title">Daikoku PA</h2>
         <div className="list-status-box">
@@ -56,11 +57,7 @@ const ListContainer = ({ openItem, openModal }) => (
       </div>
     </div>
     <div className="list-item">
-      <img
-        src="src/assets/imgs/heiwajima-img1.jpg"
-        alt=""
-        className="list-img"
-      />
+      <img src={heiwajima} alt="" className="list-img" />
       <div className="list-info">
         <h2 className="list-title">Heiwajima PA (OUT)</h2>
         <div className="list-status-box">
@@ -80,11 +77,7 @@ const ListContainer = ({ openItem, openModal }) => (
       </div>
     </div>
     <div className="list-item">
-      <img
-        src="src/assets/imgs/shibaura-img1.jpg"
-        alt=""
-        className="list-img"
-      />
+      <img src={shibaura} alt="" className="list-img" />
       <div className="list-info">
         <h2 className="list-title">Shibaura PA</h2>
         <div className="list-status-box">
@@ -104,11 +97,7 @@ const ListContainer = ({ openItem, openModal }) => (
       </div>
     </div>
     <div className="list-item">
-      <img
-        src="src/assets/imgs/hakozaki-img1.jpg"
-        alt=""
-        className="list-img"
-      />
+      <img src={hakozaki} alt="" className="list-img" />
       <div className="list-info">
         <h2 className="list-title">Hakozaki PA</h2>
         <div className="list-status-box">
@@ -128,11 +117,7 @@ const ListContainer = ({ openItem, openModal }) => (
       </div>
     </div>
     <div className="list-item">
-      <img
-        src="src/assets/imgs/umihotaru-img1.jpg"
-        alt=""
-        className="list-img"
-      />
+      <img src={umihotaru} alt="" className="list-img" />
       <div className="list-info">
         <h2 className="list-title">Umihotaru PA</h2>
         <div className="list-status-box">
