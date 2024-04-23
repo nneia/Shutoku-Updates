@@ -1,6 +1,6 @@
 import "./ListContainer.css";
 import tatsumi from "../../assets/imgs/tatsumi1-img1.jpg";
-import daikoku from "../../assets/imgs/daikoku1-img1.jpg";
+import daikoku from "../../assets/imgs/daikoku-img1.jpg";
 import heiwajima from "../../assets/imgs/heiwajima-img1.jpg";
 import shibaura from "../../assets/imgs/shibaura-img1.jpg";
 import hakozaki from "../../assets/imgs/hakozaki-img1.jpg";
