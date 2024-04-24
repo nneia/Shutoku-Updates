@@ -52,11 +52,11 @@ $nodata: #d9d9d9;
 }
 .list-container {
   width: 30%;
-  height: 750px;
+  height: 100vh;
   font-family: "Ubuntu", sans-serif;
   overflow-y: scroll;
-  box-sizing: border-box;
-  padding-bottom: 50px;
+
+  padding-bottom: 100px;
   display: block;
 }
 

@@ -179,3 +179,9 @@
 .chosen {
   color: #51ffc0 !important;
 }
+
+@media (max-width: 850px) {
+  .pa-container {
+    width: 100% !important;
+  }
+}

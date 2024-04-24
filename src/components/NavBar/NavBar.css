@@ -22,3 +22,8 @@
   right: 50px;
   cursor: pointer;
 }
+@media (max-width: 450px) {
+  .navbar {
+    padding-left: 20px;
+  }
+}
