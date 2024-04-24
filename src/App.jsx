@@ -8,27 +8,37 @@ import UpdateStatusModal from "./components/Modals/UpdateStatus.jsx";
 import MobileControls from "./components/MobileControls/MobileControls.jsx";
 
 function App() {
-  const [currentView, setCurrentView] = useState("list"); // 'list' or 'details'
+  const [currentView, setCurrentView] = useState("list"); // Controls list | details
+  const [currentViewMap, setCurrentViewMap] = useState("map"); // Controls map | list
+  const [isModalOpen, setModalOpen] = useState(false); // Controls modal visibility
+
   const toggleView = () => {
-    setCurrentView(currentView === "list" ? "details" : "list"); // Change to details view
+    setCurrentView(currentView === "list" ? "details" : "list");
   };
 
-  const [isModalOpen, setModalOpen] = useState(false);
+  const changeViewMap = view => {
+    setCurrentViewMap(view);
+  };
+
   const toggleModal = () => setModalOpen(!isModalOpen);
 
   return (
     <>
       <NavBar />
       <div className="content-container">
-        <GoogleMap openItem={toggleView} />
-        {currentView === "list" ? (
-          <ListContainer openItem={toggleView} openModal={toggleModal} />
-        ) : (
-          <PADetails goBack={toggleView} openModal={toggleModal} />
+        {currentViewMap === "map" && (
+          <GoogleMap openItem={toggleView} changeViewMap={changeViewMap} />
         )}
+        {currentViewMap === "list" &&
+          (currentView === "list" ? (
+            <ListContainer openItem={toggleView} openModal={toggleModal} />
+          ) : (
+            <PADetails goBack={toggleView} openModal={toggleModal} />
+          ))}
         <UpdateStatusModal Open={isModalOpen} Close={toggleModal} />
       </div>
-      <MobileControls />
+      <MobileControls changeViewMap={changeViewMap} selected={currentViewMap} />
+      {/*Sending the changeViewMap function to MobileControlls component*/}
     </>
   );
 }

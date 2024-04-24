@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 
-const GoogleMap = ({ openItem }) => {
+const GoogleMap = ({ openItem, changeViewMap }) => {
   const mapContainerRef = useRef(null); // Create a ref for the map container
 
   useEffect(() => {
@@ -473,6 +473,7 @@ const GoogleMap = ({ openItem }) => {
         markerInstance.addListener("click", () => {
           if (openItem) {
             openItem();
+            changeViewMap("list");
           }
         });
 

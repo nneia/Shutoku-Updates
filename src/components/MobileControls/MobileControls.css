@@ -11,6 +11,7 @@
 }
 .controlls-container > :nth-child(1) {
   border-right: 1px solid #ddd;
+  border-bottom: 0px !important;
 }
 .btn-wrap {
   position: relative;
@@ -26,6 +27,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   color: #ddd;
+  padding: 30px;
 }
 .selected {
   color: #51ffc0 !important;
@@ -33,6 +35,6 @@
 
 @media (max-width: 850px) {
   .controlls-container {
-    display: flex;
+    display: flex !important;
   }
 }

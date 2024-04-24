@@ -98,6 +98,6 @@ $nodata: #d9d9d9;
     height: 100vh;
     position: relative;
     overflow: hidden;
-    display: none;
+    display: block;
   }
 }
