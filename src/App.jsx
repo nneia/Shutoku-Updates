@@ -5,6 +5,7 @@ import GoogleMap from "./components/Map/Map.jsx";
 import ListContainer from "./components/ListContainer/ListContainer.jsx";
 import PADetails from "./components/PADetails/PADetails.jsx";
 import UpdateStatusModal from "./components/Modals/UpdateStatus.jsx";
+import MobileControls from "./components/MobileControls/MobileControls.jsx";
 
 function App() {
   const [currentView, setCurrentView] = useState("list"); // 'list' or 'details'
@@ -27,6 +28,7 @@ function App() {
         )}
         <UpdateStatusModal Open={isModalOpen} Close={toggleModal} />
       </div>
+      <MobileControls />
     </>
   );
 }

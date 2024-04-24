@@ -89,3 +89,48 @@
 .list-nav:hover {
   opacity: 0.7;
 }
+
+@media (max-width: 1366px) {
+  .list-title {
+    font-size: 20px;
+  }
+}
+@media (max-width: 1180px) {
+  .list-title {
+    font-size: 18px;
+  }
+  .list-update {
+    padding: 10px;
+
+    font-size: 10px;
+  }
+  .list-nav {
+    padding: 8px;
+    margin-left: 5px;
+  }
+  .nav-icon {
+    height: 16px;
+  }
+}
+@media (max-width: 850px) {
+  .list-container {
+    width: 100% !important;
+    height: 90% !important;
+  }
+  .list-update {
+    padding: 14px;
+    font-size: 14px;
+  }
+  .list-nav {
+    padding: 10px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-left: 10px;
+  }
+  .nav-icon {
+    height: 22px;
+  }
+  .list-title {
+    font-size: 20px;
+  }
+}

@@ -108,3 +108,9 @@
   background-color: #ddd;
   color: #2e2e2e;
 }
+
+@media (max-width: 850px) {
+  .modal-upd {
+    width: 90%;
+  }
+}

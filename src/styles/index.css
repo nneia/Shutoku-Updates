@@ -37,6 +37,12 @@ $nodata: #d9d9d9;
   width: 100%;
   position: relative;
 }
+.content-container > :nth-child(1) {
+  width: 70% !important;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
 
 #google-map {
   width: 70%;
@@ -84,4 +90,14 @@ $nodata: #d9d9d9;
 
 .chosen {
   color: #51ffc0 !important;
+}
+
+@media (max-width: 850px) {
+  .content-container > :nth-child(1) {
+    width: 100% !important;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    display: none;
+  }
 }

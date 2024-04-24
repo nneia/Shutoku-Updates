@@ -1,0 +1,38 @@
+.controlls-container {
+  position: absolute;
+  width: 100%;
+  height: 10%;
+  z-index: 100;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  background-color: #312f2f;
+  display: none;
+}
+.controlls-container > :nth-child(1) {
+  border-right: 1px solid #ddd;
+}
+.btn-wrap {
+  position: relative;
+  width: 50%;
+  cursor: pointer;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+.controlls-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ddd;
+}
+.selected {
+  color: #51ffc0 !important;
+}
+
+@media (max-width: 850px) {
+  .controlls-container {
+    display: flex;
+  }
+}
