@@ -1,8 +1,8 @@
 .google-map {
-  width: 70%;
+  width: 70% !important;
   height: 100vh;
-  display: block;
   position: relative;
+  overflow: hidden;
 }
 .list-container {
   width: 30%;
@@ -40,4 +40,14 @@
 .gm-style-iw-tc::after,
 .gm-ui-hover-effect {
   display: none !important;
+}
+
+@media (max-width: 850px) {
+  .google-map {
+    width: 100% !important;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    display: none;
+  }
 }

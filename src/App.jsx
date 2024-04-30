@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./App.css";
 import NavBar from "./components/NavBar/NavBar.jsx";
 import GoogleMap from "./components/Map/Map.jsx";
@@ -16,6 +16,10 @@ function App() {
     setCurrentView(currentView === "list" ? "details" : "list");
   };
 
+  useEffect(() => {
+    console.log(currentViewMap); // This will log the updated state after re-renders
+  }, [currentViewMap]); // This effect runs only when currentViewMap changes
+
   const changeViewMap = view => {
     setCurrentViewMap(view);
   };
@@ -26,17 +30,25 @@ function App() {
     <>
       <NavBar />
       <div className="content-container">
-        {currentViewMap === "map" && (
-          <GoogleMap openItem={toggleView} changeViewMap={changeViewMap} />
+        <GoogleMap
+          openItem={toggleView}
+          changeViewMap={changeViewMap}
+          currentViewMap={currentViewMap}
+        />
+
+        {currentView === "list" ? (
+          <ListContainer
+            openItem={toggleView}
+            openModal={toggleModal}
+            currentViewMap={currentViewMap}
+          />
+        ) : (
+          <PADetails goBack={toggleView} openModal={toggleModal} />
         )}
-        {currentViewMap === "list" &&
-          (currentView === "list" ? (
-            <ListContainer openItem={toggleView} openModal={toggleModal} />
-          ) : (
-            <PADetails goBack={toggleView} openModal={toggleModal} />
-          ))}
+
         <UpdateStatusModal Open={isModalOpen} Close={toggleModal} />
       </div>
+
       <MobileControls changeViewMap={changeViewMap} selected={currentViewMap} />
       {/*Sending the changeViewMap function to MobileControlls component*/}
     </>

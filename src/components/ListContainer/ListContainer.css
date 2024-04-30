@@ -114,6 +114,7 @@
 }
 @media (max-width: 850px) {
   .list-container {
+    display: none !important;
     width: 100% !important;
     height: 90% !important;
   }

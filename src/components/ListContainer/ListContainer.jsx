@@ -1,4 +1,5 @@
 import "./ListContainer.css";
+import "../../styles/index.css";
 import tatsumi from "../../assets/imgs/tatsumi1-img1.jpg";
 import daikoku from "../../assets/imgs/daikoku-img1.jpg";
 import heiwajima from "../../assets/imgs/heiwajima-img1.jpg";
@@ -8,8 +9,10 @@ import umihotaru from "../../assets/imgs/umihotaru-img1.jpg";
 
 const linkToPA = "https://maps.app.goo.gl/caxDBY1KC52nDLj97";
 
-const ListContainer = ({ openItem, openModal }) => (
-  <div className="list-container">
+const ListContainer = ({ openItem, openModal, currentViewMap }) => (
+  <div
+    className={`list-container ${currentViewMap === "list" ? "display" : ""}`}
+  >
     <div className="list-item">
       <img src={tatsumi} alt="" className="list-img" onClick={openItem} />
       <div className="list-info">

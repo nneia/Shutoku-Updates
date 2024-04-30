@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
+import "./Map.css";
 
-const GoogleMap = ({ openItem, changeViewMap }) => {
+const GoogleMap = ({ openItem, changeViewMap, currentViewMap }) => {
   const mapContainerRef = useRef(null); // Create a ref for the map container
 
   useEffect(() => {
@@ -498,7 +499,10 @@ const GoogleMap = ({ openItem, changeViewMap }) => {
   }, []); // Empty dependency array means this effect runs once on mount
 
   return (
-    <div ref={mapContainerRef} style={{ width: "70%", height: "100vh" }} />
+    <div
+      ref={mapContainerRef}
+      className={`google-map ${currentViewMap === "map" ? "display" : ""}`}
+    />
   );
 };
 

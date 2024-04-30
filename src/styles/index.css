@@ -31,35 +31,22 @@ $nodata: #d9d9d9;
 .nodata {
   background-color: #d9d9d9;
 }
+.chosen {
+  color: #51ffc0 !important;
+}
+
+.display {
+  display: block !important;
+}
+.hide {
+  display: none !important;
+}
 
 .content-container {
   display: flex;
   width: 100%;
   position: relative;
 }
-.content-container > :nth-child(1) {
-  width: 70% !important;
-  height: 100vh;
-  position: relative;
-  overflow: hidden;
-}
-
-#google-map {
-  width: 70%;
-  height: 750px;
-  display: block;
-  position: relative;
-}
-.list-container {
-  width: 30%;
-  height: 100vh;
-  font-family: "Ubuntu", sans-serif;
-  overflow-y: scroll;
-
-  padding-bottom: 100px;
-  display: block;
-}
-
 .info-window {
   background-color: #312f2f;
   color: white;
@@ -86,18 +73,4 @@ $nodata: #d9d9d9;
 .gm-style-iw-tc::after,
 .gm-ui-hover-effect {
   display: none !important;
-}
-
-.chosen {
-  color: #51ffc0 !important;
-}
-
-@media (max-width: 850px) {
-  .content-container > :nth-child(1) {
-    width: 100% !important;
-    height: 100vh;
-    position: relative;
-    overflow: hidden;
-    display: block;
-  }
 }
