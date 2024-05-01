@@ -4,6 +4,7 @@ import img1 from "../../assets/imgs/tatsumi1-img1.jpg";
 import img2 from "../../assets/imgs/tatsumi1-img2.jpg";
 import jay from "../../assets/users/jay.jpg";
 import lucio from "../../assets/users/lucio.jpg";
+import nav from "../../assets/icons/directions.jpg";
 
 const PADetails = ({ goBack, openModal, currentViewMap }) => {
   const linkToPA = "https://maps.app.goo.gl/caxDBY1KC52nDLj97";
@@ -45,11 +46,7 @@ const PADetails = ({ goBack, openModal, currentViewMap }) => {
             Update Status
           </p>
           <a href={linkToPA} target="_blank" rel="noopener noreferrer">
-            <img
-              className="pa-directions"
-              src="src/assets/icons/directions.jpg"
-              alt=""
-            />
+            <img className="pa-directions" src={nav} alt="" />
           </a>
         </div>
         <div className="votes-box">
