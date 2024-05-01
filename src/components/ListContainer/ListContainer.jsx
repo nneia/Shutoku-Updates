@@ -6,6 +6,7 @@ import heiwajima from "../../assets/imgs/heiwajima-img1.jpg";
 import shibaura from "../../assets/imgs/shibaura-img1.jpg";
 import hakozaki from "../../assets/imgs/hakozaki-img1.jpg";
 import umihotaru from "../../assets/imgs/umihotaru-img1.jpg";
+import nav from "../../assets/icons/directions.jpg";
 
 const linkToPA = "https://maps.app.goo.gl/caxDBY1KC52nDLj97";
 
@@ -29,11 +30,7 @@ const ListContainer = ({ openItem, openModal, currentViewMap }) => (
           </p>
           <a href={linkToPA} target="_blank" rel="noopener noreferrer">
             <div className="list-nav">
-              <img
-                src="src/assets/icons/directions.jpg"
-                alt=""
-                className="nav-icon"
-              />
+              <img src={nav} alt="" className="nav-icon" />
             </div>
           </a>
         </div>
@@ -54,11 +51,7 @@ const ListContainer = ({ openItem, openModal, currentViewMap }) => (
             Update Status
           </p>
           <div className="list-nav">
-            <img
-              src="src/assets/icons/directions.jpg"
-              alt=""
-              className="nav-icon"
-            />
+            <img src={nav} alt="" className="nav-icon" />
           </div>
         </div>
       </div>
@@ -78,11 +71,7 @@ const ListContainer = ({ openItem, openModal, currentViewMap }) => (
             Update Status
           </p>
           <div className="list-nav">
-            <img
-              src="src/assets/icons/directions.jpg"
-              alt=""
-              className="nav-icon"
-            />
+            <img src={nav} alt="" className="nav-icon" />
           </div>
         </div>
       </div>
@@ -102,11 +91,7 @@ const ListContainer = ({ openItem, openModal, currentViewMap }) => (
             Update Status
           </p>
           <div className="list-nav">
-            <img
-              src="src/assets/icons/directions.jpg"
-              alt=""
-              className="nav-icon"
-            />
+            <img src={nav} alt="" className="nav-icon" />
           </div>
         </div>
       </div>
@@ -126,11 +111,7 @@ const ListContainer = ({ openItem, openModal, currentViewMap }) => (
             Update Status
           </p>
           <div className="list-nav">
-            <img
-              src="src/assets/icons/directions.jpg"
-              alt=""
-              className="nav-icon"
-            />
+            <img src={nav} alt="" className="nav-icon" />
           </div>
         </div>
       </div>
@@ -150,11 +131,7 @@ const ListContainer = ({ openItem, openModal, currentViewMap }) => (
             Update Status
           </p>
           <div className="list-nav">
-            <img
-              src="src/assets/icons/directions.jpg"
-              alt=""
-              className="nav-icon"
-            />
+            <img src={nav} alt="" className="nav-icon" />
           </div>
         </div>
       </div>

@@ -1,10 +1,17 @@
 import "./PADetails.css";
+import "../../styles/index.css";
+import img1 from "../../assets/imgs/tatsumi1-img1.jpg";
+import img2 from "../../assets/imgs/tatsumi1-img2.jpg";
+import jay from "../../assets/users/jay.jpg";
+import lucio from "../../assets/users/lucio.jpg";
 
-const PADetails = ({ goBack, openModal }) => {
+const PADetails = ({ goBack, openModal, currentViewMap }) => {
   const linkToPA = "https://maps.app.goo.gl/caxDBY1KC52nDLj97";
 
   return (
-    <div className="pa-container">
+    <div
+      className={`pa-container ${currentViewMap === "list" ? "display" : ""}`}
+    >
       <div className="back-btn" onClick={goBack}>
         <svg
           className="arrow-back"
@@ -24,16 +31,8 @@ const PADetails = ({ goBack, openModal }) => {
         <p>Back</p>
       </div>
       <div className="pa-banner">
-        <img
-          src="src/assets/imgs/tatsumi1-img1.jpg"
-          alt=""
-          className="pa-img"
-        />
-        <img
-          src="src/assets/imgs/tatsumi1-img2.jpg"
-          alt=""
-          className="pa-img"
-        />
+        <img src={img1} alt="" className="pa-img" />
+        <img src={img2} alt="" className="pa-img" />
       </div>
       <div className="pa-info-box">
         <h1 className="pa-title">Tatsumi PA (IN)</h1>
@@ -58,22 +57,14 @@ const PADetails = ({ goBack, openModal }) => {
             Recent votes (<span className="votes-counter">12</span>)
           </p>
           <div className="votes-container">
-            <img
-              src="src/assets/imgs/heiwajima-img1.jpg"
-              alt=""
-              className="votes-img"
-            />
+            <img src={jay} alt="" className="votes-img" />
           </div>
         </div>
         <div className="notes-box">
           <p className="notes-header">Notes</p>
           <p className="notes-placeholder">There is nothing here yet...</p>
           <div className="notes-user">
-            <img
-              src="src/assets/imgs/daikoku-img1.jpg"
-              alt=""
-              className="notes-img"
-            />
+            <img src={lucio} alt="" className="notes-img" />
             <div className="notes-comment-wrap">
               <p className="notes-comment">Police made an announcement</p>
               <p className="notes-time">21:39</p>

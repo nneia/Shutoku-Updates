@@ -1,10 +1,11 @@
 import "./NavBar.css";
+import logIcon from "../../assets/icons/user.png";
 
 function NavBar() {
   return (
     <div className="navbar">
       <h1 className="nav-header">Shutoku Maps</h1>
-      <img src="src/assets/icons/user.png" alt="" className="login-icon" />
+      <img src={logIcon} alt="" className="login-icon" />
     </div>
   );
 }

@@ -43,7 +43,11 @@ function App() {
             currentViewMap={currentViewMap}
           />
         ) : (
-          <PADetails goBack={toggleView} openModal={toggleModal} />
+          <PADetails
+            goBack={toggleView}
+            openModal={toggleModal}
+            currentViewMap={currentViewMap}
+          />
         )}
 
         <UpdateStatusModal Open={isModalOpen} Close={toggleModal} />
